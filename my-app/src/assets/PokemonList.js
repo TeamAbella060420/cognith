@@ -3,8 +3,10 @@ import React from 'react'
 export const PokemonList = ({ pokemon }) => {
   return (
     <div>
-      {pokemon.map(data => (
-        <li>{data}</li>
+      {pokemon.map((data, index) => (
+        <div key={index}>
+          {data}
+        </div>
       ))}
     </div>
   )

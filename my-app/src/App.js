@@ -1,5 +1,5 @@
-import Component1 from './Component1';
-import Component2 from './Component2';
+import Component1 from './component/Component1';
+import Component2 from './component/Component2';
 import { Routes, Route } from 'react-router-dom';
 
 

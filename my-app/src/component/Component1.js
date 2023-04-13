@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { PokemonList } from '../assets/PokemonList'
 
 const Component1 = () => {
+  const [pokemon, setPokemon] = useState(['bullbazor','charmander'])
+
   return (
-    <div>Container 1</div>
+    <div><PokemonList pokemon={pokemon} /></div>
+  
   )
 }
 

@@ -4,7 +4,6 @@ import axios from 'axios'
 
 const ComponentOne = () => {
   const [pokemon, setPokemon] = useState([])
-
   useEffect(() => {
     axios.get('https://pokeapi.co/api/v2/pokemon').then( res => {
     setPokemon(res.data.results.map(p => (

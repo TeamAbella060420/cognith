@@ -1,7 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const ComponentTwo = () => {
+const ComponentTwo = ({pokemon}) => {
+  const myproduct = pokemon.find((item) => item.data.results === id);
+
   return (
     <>
       <Link to='/'>
